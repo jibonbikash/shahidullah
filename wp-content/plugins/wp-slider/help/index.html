@@ -1,0 +1,131 @@
+
+  
+    <h2>Table of <strong>Contents</strong></h2>
+    <ul>
+    <li><a href="#help1">Installation</a></li>
+    <li><a href="#help2">Support</a></li>
+    <li><a href="#help5">Frequently Asked Questions</a></li>
+    <li><a href="#help7">Known Problems</a></li>
+    <li><a href="#help9">Support Notes</a></li>
+    </ul>
+    
+    
+    
+    
+
+    <h2 id="help1">Installation <a href="#wrapper" class="top">Back to top</a></h2>
+    <p>To do a new installation of the plugin, please follow these steps:</p>
+    <ol>
+      <li>Download the zipped plugin file to your local machine.</li>
+      <li>Unzip the file.</li>
+      <li>Upload the <code>wp-slider</code> folder to the <code>/wp-content/plugins/</code> directory.</li>
+      <li>Activate the plugin through the 'Plugins' menu in WordPress.</li>
+      <li>Optionally, go to the "Slider Evolution" page under Settings tab and configure the options.</li>
+      <li>Add the code of the slider to your theme.</li>
+    </ol>
+    
+    <p>If you have already installed the plugin:</p>
+    <ol>
+      <li>De-activate the plugin.</li>
+      <li>Download the latest files.</li>
+      <li>Follow the new installation steps.</li>
+    </ol>
+
+
+
+    <h2 id="help2">Support <a href="#wpwrap" class="top">Back to top</a></h2>
+    <p>This plugin supports the following browsers:</p>
+    <ul>
+      <li>Internet Explorer 6+</li>
+      <li>Firefox 2 +</li>
+      <li>Safari 3 +</li>
+      <li>Chrome 3 +</li>
+      <li>Opera 9 +</li>
+    </ul>
+
+    <p>Quirks mode is not supported in any browser, but that doesn't necessarily mean that it won't work. This means that you need to use either a strict or transitional DOCTYPE.</p>
+
+
+
+
+    <h2 id="help5">Frequently Asked Questions <a href="#wrapper" class="top">Back to top</a></h2>
+    <ol>
+      <li>
+        <strong>Can I use this script on my client's website?</strong>
+        <p>Yes. Your license includes the rights to use the script on any one website at a time. If you'd like to use the script as part of a service, please consider purchasing an Extended License.</p>
+      </li>
+      
+      
+      
+      <li>
+        <strong>Can I make modifications to this script?</strong>
+        <p>Feel free to make any modifications you need. Also feel free to blog and show it to your friends, but please do not redistribute the script with your changes. </p>
+      </li>
+      
+      
+      
+      
+      <li>
+        <strong>Why the plugin doesn't work?</strong>
+        <p>Make sure you don't have multiple versions of jquery in your page. Look at the source view in your browser to see what javascript files you are loading.</p>
+        <p>For example:</p>
+<pre>
+&lt;script src="crazy_path/<strong>jquery.js</strong>" type="text/javascript"&gt;&lt;/script&gt;
+...
+&lt;script src="crazy_path/<strong>jquery.min.js</strong>" type="text/javascript"&gt;&lt;/script&gt;
+...
+&lt;script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/<strong>jquery.min.js</strong>"&gt;&lt;/script&gt;
+</pre>
+        <p><strong>jquery.js</strong> and <strong>jquery.min.js</strong> are the same script. Delete the last one if you can. Keep only one.</p>
+        
+        <p>Also, please check that there is a <code>wp_head();</code> template tag in your theme header.php and there is a <code>wp_footer();</code> template tag in your theme footer.php.</p>
+        <p>Alternately you may have other plugins that conflict with Slider Evolution. Try disabling your other plugins and see if that helps. If it does, re-enable each plugin, one at a time to see which one is causing the conflict. Please let me know which plugin is causing the problem.</p>
+      </li>
+
+
+
+      <li>
+        <strong>The slider is positioned incorrectly or behaving strangely in Internet Explorer</strong>
+        <p>This is likely a doctype issue. This plugin requires a valid doctype and rendering in quirks mode is not supported.
+         Make sure you are using the full doctype declaration to insure rendering in standards mode.</p>
+         
+         <p>This abbreviated doctype renders the document in quirks mode for Internet Explorer:</p>
+<pre>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"&gt;
+</pre>
+       <p>The doctype with URI renders in standards mode for all browsers:</p>
+<pre>
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;
+</pre>
+      </li>
+      
+      
+    </ol>
+
+
+
+    <h2 id="help7">Known Problems <a href="#wrapper" class="top">Back to top</a></h2>
+    <ol>
+      <li>
+        <strong>No support for iPad</strong> (if someone wants to donate an iPad to me I'll guarantee support)
+      </li>
+      <li>In some instances performance may be slow in IE - this may be due to plugin conflicts or slow JavaScript performance in IE.</li>
+    </ol>
+
+
+
+    <h2 id="help9">Support Notes <a href="#wpwrap" class="top">Back to top</a></h2>
+
+    <p>To be able to help solve a problem quickly, please read the entries below. I'll do my best to assist you. I provide a full range of Support except:</p>
+    <ol>
+      <li>I don't (and can't) support the 3rd-party code (i.e. external plugins, javascripts, flash players, etc.) In such cases you shall have to contact the authors.</li>
+      <li>I don't support errors provoked by the strong modification of the original packages.</li>
+      <li>I don't customize the packages in personal way.</li>
+      <li>If you sure that your improvement ideas will be helpful to others, please don't hesitate to share it with me. Most likely that it will became a free package update.</li>
+    </ol>
+    <p>If you have a more general question relating to scripts on CodeCanyon, you might consider visiting the <a href="http://codecanyon.net/forums/topic/codecanyon/65">forums</a> and asking your question in the "Item Discussion" section. Once again, thank you so much for purchasing this plugin.</p>
+
+    <div class="alert">
+      <p><a href="http://codecanyon.net/user/aeroalquimia">aeroalquimia</a> (Eduardo Daniel Sada)<br/>
+      <strong>Buenos Aires, Argentina.</strong> Apr 2011</p>
+    </div>
