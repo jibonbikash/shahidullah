@@ -1,8 +1,7 @@
 <?php
 get_header();
 ?>
-
-    
+  
     <div class="singlepage">
     
     <div id="contents2">
