@@ -8,7 +8,7 @@ get_header();
 
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.4.2.min.js" type="text/javascript"></script>
  <script src="<?php bloginfo('template_directory'); ?>/js/jq-faq-2.js"></script> 
-    
+    <div id="inner_contents1">
     <div class="singlepage">
     
     <div id="contents2">
@@ -41,7 +41,7 @@ get_header();
             
     </div>
     </div>
-    
+    </div>
 <?php
 get_footer();
 ?>

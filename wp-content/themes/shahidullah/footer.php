@@ -19,16 +19,17 @@
                             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>services">Services</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>healthcare-and-healthcare-professionals/">Healthcare professionals</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>company-formation">Company Formation</a></li>
-                             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>faq">Faq</a></li>
+                             
                         </ul>
                     </div>
                     <div class="footer_top_box2_ul_right">
                     	<ul>
-                        	<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>business-software">Bookkeeping software</a></li>
+                        	<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>business-software">Business Software</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>sectors">Sector</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>blog">Blog</a></li>
                             <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>r-d-claims/">R &amp; D Claims</a></li>
-                            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Career</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>faq">FAQs</a></li>
+                            <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>careers">Careers</a></li>
                            
                         </ul>
                     </div>
@@ -45,7 +46,7 @@
 				'post_type'     => 'post',
 				'post_status'     => 'publish',
 				'cat'     => 6,
-				'showposts'     => 3,
+				'showposts'     => -1,
 				'orderby'     =>'ID',
 				'order'    => 'DESC'
 				);
@@ -80,7 +81,7 @@
                 	<ul>
                     	<li><a href="#">Disclaimer</a></li>
                         <li>|</li>
-                        <li><a href="#">Staff Login </a></li>
+                        <li><a href="http://www.remote.shahidullah.com/" target="_blank">Staff Login </a></li>
                     </ul>
                 </div>
                 

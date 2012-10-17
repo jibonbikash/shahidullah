@@ -7,15 +7,69 @@ get_header();
 ?>
 
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.4.2.min.js" type="text/javascript"></script>
- <script src="<?php bloginfo('template_directory'); ?>/js/jq-faq-2.js"></script>  
-	
  
+	
+  <div id="inner_contents1">
     <div class="singlepage">
     
     <div id="contents2">
     <div class="titlesingle">  <h1><?php the_title();?></h1></div>
-    
+ <?php
+/*function curPageURL() {
+ $pageURL = 'http';
+ if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
+ $pageURL .= "://";
+ if ($_SERVER["SERVER_PORT"] != "80") {
+  $pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
+ } else {
+  $pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
+ }
+ return $pageURL;
+}*/
+?>   
+<?php
+//echo $_GET["action"];
+  //echo curPageURL();
+  
+?>
+<?php
+if($_GET["action"])
+{
+?>
+<script>
 
+$(document).ready(function() {
+	
+	$('.answer-wrapper<?php echo $_GET["action"];?>').slideToggle();
+	$('.answer-wrapper').hide();
+	$('.question').live('click', function() {
+		$(this).next().slideToggle();
+	});
+	//$("p").text("The DOM is now loaded and can be manipulated.");
+});
+
+</script>
+
+<?php
+}
+else
+{
+?>
+<script>
+
+$(document).ready(function() {
+	$('.answer-wrapper').hide();
+
+	$('.question').live('click', function() {
+		$(this).next().slideToggle();
+	});
+});
+
+</script>
+
+<?php
+}
+?>
 
 <div id="faqSection" class="faq">
 <?php
@@ -34,7 +88,9 @@ get_header();
  <p class="question"><?php the_title();?>
  
  </p>
-  <div class="answer-wrapper">
+
+
+  <div class="answer-wrapper<?php if($_GET["action"]=="VAT"){echo $_GET["action"];}?>" >
 
   <p align="right"><?php if (function_exists("wpptopdf_display_icon")) echo wpptopdf_display_icon();?>
 </p> <a name="<?php the_title();?>" id="<?php the_title();?>"></a> <?php the_content(); ?> </div>
@@ -42,13 +98,14 @@ get_header();
 			 	endwhile; 
 				wp_reset_query();
 			?>
-</div>
+
  <?php 
 	query_posts('p=159');
         global $more;  
 while (have_posts()) : the_post();   ?>  
-<p class="news-title"><span><?php the_title();?></span></p>
-<div class="news_text">
+<p class="question"><?php the_title();?></p>
+<div class="answer-wrapper">
+
 <p align="right"><?php if (function_exists("wpptopdf_display_icon")) echo wpptopdf_display_icon();?></p>
 <?php the_content(); ?>
 </div>
@@ -56,46 +113,54 @@ while (have_posts()) : the_post();   ?>
 			 	endwhile; 
 				wp_reset_query();
 			?>
-       <br />
+            
+                 <style>
+div.blockk
+{
+	display:block !important;
+}
+</style>
         <?php 
 	query_posts('page_id=57');
         global $more;  
 while (have_posts()) : the_post();   ?>  
-<h4><a href="<?php the_permalink() ?>" title="<?php the_title();?>"><?php the_title();?></a></h4>
+<p class="question11"><a href="<?php the_permalink() ?>" title="<?php the_title();?>"><?php the_title();?></a></p>
 <?php
 			 	endwhile; 
 				wp_reset_query();
 			?>  
             
-            <br />
+            
                  
             <?php 
 	query_posts('page_id=116');
         global $more;  
 while (have_posts()) : the_post();   ?>  
-<h4><a href="<?php the_permalink() ?>" title="<?php the_title();?>"><?php the_title();?></a></h4>
+<p class="question11"><a href="<?php the_permalink() ?>" title="<?php the_title();?>"><?php the_title();?></a></p>
 <?php
 			 	endwhile; 
 				wp_reset_query();
 			?>  
-<br />
+
 
             <?php 
 	query_posts('page_id=118');
         global $more;  
 while (have_posts()) : the_post();   ?>  
-<h4><a href="<?php the_permalink() ?>" title="<?php the_title();?>"><?php the_title();?></a></h4>
+<p class="question11"><a href="<?php the_permalink() ?>" title="<?php the_title();?>"><?php the_title();?></a></p>
 <?php
 			 	endwhile; 
 				wp_reset_query();
 			?>  
+     </div>  
+
 
 </div>
 
             
     </div>
     </div>
-    
+    </div>
 <?php
 get_footer();
 ?>

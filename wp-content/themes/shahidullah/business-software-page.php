@@ -5,17 +5,18 @@
  */
 get_header();
 ?>
-<style type="text/css">
 
-
-</style>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.4.2.min.js" type="text/javascript"></script>
  <script src="<?php bloginfo('template_directory'); ?>/js/jq-faq-2.js"></script> 
-    
+ 
     <div class="singlepage">
-       <div class="titlesingle">  <h1><?php the_title();?></h3></div>
+    
+    <div id="contents2">
+    <div class="titlesingle">  <h1><?php the_title();?></h1></div>
+    
+
+
 <div id="faqSection" class="faq">
-   
   
 <?php
 				$args = array(
@@ -39,11 +40,9 @@ get_header();
 
 
 
-
-
  			 
-            
-    
+     </div>        
+     </div>
     </div>
     
 <?php

@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-    
+     <div id="inner_contents1">
     <div class="singlepage">
     
     <div id="contents2">
@@ -19,7 +19,7 @@ get_header();
     
     </div>
     </div>
-    
+    </div>
 <?php
 get_footer();
 ?>

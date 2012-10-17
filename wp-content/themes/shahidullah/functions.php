@@ -97,3 +97,4 @@ function my_custom_init() {
 	add_post_type_support( 'page', 'excerpt' );
 }
 remove_filter('the_excerpt', 'wpautop');
+//remove_filter('the_content', 'wpautop');

@@ -9,7 +9,7 @@ get_header();
     
     <div id="contents1">
     
-		<div class="contents1_1">
+			<div class="contents1_1">
             	<div class="contents1_1_top">
                  <?php 
 	query_posts('page_id=7');
@@ -18,7 +18,7 @@ while (have_posts()) : the_post();   ?>
 
                 	<h1><?php the_title();?></h1><img src="<?php bloginfo('template_directory'); ?>/images/shahidullah-icon1.jpg" alt="icon" />
             <p>        
-                    <?php the_excerpt(); ?> 
+                    <?php the_excerpt(); ?><br />
                     	<?php //the_content_rss('', TRUE, '', 40); ?><a href="<?php the_permalink() ?>" title="<?php the_title();?>">read more</a>
                     </p>
      <?php
@@ -124,7 +124,8 @@ while (have_posts()) : the_post();   ?>
         global $more;  
 while (have_posts()) : the_post();   ?>  
             <p>        
-                    <?php the_excerpt(); ?> 
+                    <?php the_excerpt(); ?> <br />
+                    
                     	<?php //the_content_rss('', TRUE, '', 40); ?><a href="<?php the_permalink() ?>" title="<?php the_title();?>">read more</a>
                     </p>
      <?php
@@ -168,7 +169,7 @@ while (have_posts()) : the_post();   ?>
         
         
         <div class="contents2_right">
-        	<h1>Company Formation</h1>
+        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>company-formation/">Company Formation</a></h1>
             <p>
 			 <?php 
 	query_posts('page_id=57');
@@ -180,7 +181,7 @@ while (have_posts()) : the_post();   ?>
 <?php
  endwhile;  
  wp_reset_query();
- ?>  <br /><br /><a href="<?php echo esc_url( home_url( '/' ) ); ?>company-formtion-form/">COMPANY FORMATION FORM</a>
+ ?>  <br /><br /><a href="<?php echo esc_url( home_url( '/' ) ); ?>company-formtion-form/">FORM A COMPANY NOW</a>
             </p>
        
             

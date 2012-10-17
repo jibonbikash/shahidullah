@@ -79,7 +79,7 @@ $('label.required').append('&nbsp;<strong>*</strong>&nbsp;');
 });
 </script>
 
-    
+     <div id="inner_contents1">
     <div class="singlepage">
     
     <div id="contents2">
@@ -349,7 +349,7 @@ $('label.required').append('&nbsp;<strong>*</strong>&nbsp;');
             
     </div>
     </div>
-    
+    </div>
 <?php
 get_footer();
 ?>
